@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mian_bg">
+
+    <FrameLayout
+            android:id="@+id/id_found_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/found_header_height"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_behavior="com.li.mvpprogram.widget.behavior.FoundHeaderPagerBehavior"
+    >
+
+        <com.li.mvpprogram.widget.behavior.NestedLinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+
+            <com.li.mvpprogram.widget.behavior.CustomConvenientBanner
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_143_dip"
+                    app:canLoop="true" />
+
+            <LinearLayout
+                    android:paddingTop="@dimen/dimen_15_dip"
+                    android:paddingBottom="@dimen/dimen_15_dip"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_90_dip">
+                <TextView
+                        android:id="@+id/newerRead_tv"
+                        android:text="tring/newer_read"
+                        android:drawableTop="@mipmap/faxian_xinshoubi"
+                        style="@style/find_textview_style" />
+                <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/dimen_65_dip"
+                        android:background="@color/item_down"/>
+                <TextView
+                        android:id="@+id/activity_tv"
+                        android:text="tring/activities"
+                        android:drawableTop="@mipmap/faxian_huodong"
+                        style="@style/find_textview_style" />
+                <View
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="@dimen/dimen_65_dip"
+                        android:background="@color/item_down"/>
+                <TextView
+                        android:id="@+id/study_tv"
+                        android:text="ring/study_area"
+                        android:drawableTop="@mipmap/faxian_xuexizhuanqu"
+                        style="@style/find_textview_style" />
+            </LinearLayout>
+            <!--</LinearLayout>-->
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_10_dip"
+                    android:background="@color/extension_normal_home"/>
+        </com.li.mvpprogram.widget.behavior.NestedLinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mian_bg"
+            android:orientation="vertical"
+            app:layout_behavior="com.li.mvpprogram.widget.behavior.FoundContentBehavior">
+        <LinearLayout
+                android:id="@+id/xl_head_linear"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/found_xlhead_tv"
+                    android:text="toutiao"
+                    android:textColor="@color/text333"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="@dimen/dimen_15_dip"
+                    android:paddingEnd="@dimen/dimen_10_dip"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/faxian_xiangling"
+                    android:drawablePadding="@dimen/dimen_10_dip"
+                    android:textSize="@dimen/common_text_size15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_54_dip" />
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_px"
+                    android:layout_gravity="bottom"
+                    android:background="@color/split_bg" />
+        </LinearLayout>
+
+        <include
+                layout="@layout/view_net_tips"
+                android:visibility="gone" />
+
+        <RelativeLayout
+                android:id="@+id/channel_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+            <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingRight="@dimen/dimen_40_dip"
+                    app:tabContentStart="@dimen/dimen_16_dip"
+                    app:tabIndicatorColor="@color/textColorPrimary"
+                    app:tabMaxWidth="@dimen/dimen_55_dip"
+                    app:tabPaddingEnd="@dimen/dimen_3_dip"
+                    app:tabPaddingStart="@dimen/dimen_3_dip"
+                    app:tabSelectedTextColor="@color/textColorPrimary"
+                    app:tabTextAppearance="@style/tabLayoutTextStyle"
+                    app:tabTextColor="@color/black" />
+
+            <ImageView
+                    android:id="@+id/img_manage_channel"
+                    android:layout_width="@dimen/dimen_18_dip"
+                    android:layout_height="@dimen/dimen_18_dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_12_dip"
+                    android:src="@mipmap/new_more1" />
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignBottom="@id/tabs_news"
+                    android:layout_marginTop="@dimen/dimen_13_dip"
+                    android:background="@color/gray3" />
+        </RelativeLayout>
+
+
+        <!--可滑动的布局内容-->
+        <com.li.mvpprogram.widget.view.HeadlineViewPager
+                android:id="@+id/vp_view_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

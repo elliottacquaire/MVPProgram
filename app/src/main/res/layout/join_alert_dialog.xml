@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dimen_287_dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_white_border_white_bg_notpadding">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:layout_marginBottom="@dimen/dimen_15_dip"
+        android:layout_marginLeft="@dimen/dimen_20_dip"
+        android:layout_marginRight="@dimen/dimen_20_dip"
+        android:lineSpacingExtra="@dimen/dimen_8_dip"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/textColorBackPrimary"
+        android:textSize="@dimen/common_text_size15"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_12_dip"
+        android:minHeight="@dimen/dimen_50_dip"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:textColor="@color/textColorBackPrimary"
+        android:textSize="@dimen/common_text_size16"
+        android:visibility="visible"
+        tools:text="content" />
+
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/content"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:background="@color/list_divider_last_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/makemoney_title_two"
+            android:textSize="@dimen/common_text_size16" />
+
+        <View
+            android:id="@+id/dialog_update_line_button"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/list_divider_last_color" />
+
+        <TextView
+            android:id="@+id/confirm_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/tip_text_color"
+            android:textSize="@dimen/common_text_size16" />
+    </LinearLayout>
+</RelativeLayout>
+

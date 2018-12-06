@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_tips_tv"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_45_dip"
+    android:background="#FFDADA"
+    android:drawableLeft="@mipmap/net_alert"
+    android:drawablePadding="@dimen/dimen_25_dip"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/dimen_25_dip"
+    android:text="网络连接不可用"
+    android:textColor="#7E6C6C" />

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    app:elevation="3dp">
+
+    <com.xianglin.app.widget.view.SearchView
+        android:id="@+id/custom_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.xianglin.app.widget.view.SearchView>
+
+    <View
+        android:id="@+id/toolbar_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_6_dip"
+        android:background="@color/mian_bg" />
+
+    <include layout="@layout/search_history_popupwindow"/>
+
+</android.support.design.widget.AppBarLayout>

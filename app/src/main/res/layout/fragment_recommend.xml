@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/tv_refresh_num"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30_dip"
+            android:gravity="center"
+            android:background="@color/video_refresh_layout_color"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/dimen_13_dip"
+            android:text="ing/video_refresh_test"
+            android:visibility="gone" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/mian_bg">
+
+        <com.li.mvpprogram.widget.view.MySwipeRefreshLayout
+                android:id="@+id/fragment_headline_news_swipe_refresh_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/news_xrecycler_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+        </com.li.mvpprogram.widget.view.MySwipeRefreshLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="27dp"
+                android:scaleType="center"
+                android:src="@mipmap/return_top"
+                app:backgroundTint="@color/transparent"
+                app:borderWidth="0dp"
+                app:elevation="0dp"
+                app:layout_anchorGravity="bottom|right|end"
+                app:pressedTranslationZ='0dp'
+                app:rippleColor="@color/transparent" />
+
+        <RelativeLayout
+                android:id="@+id/data_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mian_bg"
+                android:gravity="center"
+                android:visibility="gone">
+
+            <ImageView
+                    android:id="@+id/earning_detail_empty_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/data_empty" />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/earning_detail_empty_iv"
+                    android:layout_marginTop="@dimen/dimen_35_dip"
+                    android:gravity="center"
+                    android:text="tring/earning_detail_empty"
+                    android:textColor="@color/gray2"
+                    android:textSize="@dimen/common_text_size18" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/view_net_error"/>
+    </RelativeLayout>
+</LinearLayout>

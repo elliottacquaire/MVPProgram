@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MVPProgram</string>
+
+    <string name="search_cancle">取消</string>
+    <string name="search_search">搜索</string>
+
+
+    <string name="circle_title">广场</string>
+    <string name="message_title">消息</string>
+    <string name="home_title">农家</string>
+    <string name="headline_title">乡邻头条</string>
+    <string name="headline_tab">发现</string>
+    <string name="mine_title">我的</string>
+    <string name="mine_function_sina">微博</string>
+
+    <string name="exitapp">再按一次退出</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="network_error_notication">你的网络太慢了!\n点击我刷新一下试试吧</string>
+    <string name="network_not_connect">网络连接已断开!</string>
+    <string name="close">关闭</string>
+
+    <!--图案密码-->
+    <string name="please_set_pattern_pwd">请绘制手势密码</string>
+    <string name="please_choose_less_four">请至少选择4个点绘制图案</string>
+    <string name="please_rember_your_pattern_pwd">修改成功，请牢记您新的图案密码!</string>
+    <string name="please_rember_your_pattern">设置成功，请牢记您的图案密码!</string>
+    <string name="please_reset_pattern_pwd">与初次绘制图案不同，请重新绘制！</string>
+    <string name="please_make_sure_your_pattern">请再次确认图案</string>
+
+</resources>

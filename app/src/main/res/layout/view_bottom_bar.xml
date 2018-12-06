@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50_dip"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimary"
+    tools:showIn="@layout/activity_main">
+
+    <RadioGroup
+        android:id="@+id/rg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_tab"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/home_tab_selector"
+            android:text="@string/home_title" />
+
+        <RadioButton
+            android:id="@+id/message_tab"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/message_tab_selector"
+            android:text="@string/mine_function_sina" />
+
+        <RadioButton
+            android:id="@+id/publish_weibo"
+            style="@style/main_tab_style"
+            android:drawableTop="@mipmap/tab_publish"
+            android:paddingTop="@dimen/dimen_7_dip"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/headline_tab"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/headline_tab_selector"
+            android:text="@string/headline_tab" />
+
+
+        <RadioButton
+            android:id="@+id/mine_tab"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/mine_tab_selector"
+            android:text="@string/mine_title" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/v_center"
+        android:layout_width="@dimen/dimen_1_dip"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_centerInParent="true"
+        android:background="@null" />
+
+    <FrameLayout
+        android:id="@+id/fl_unread_amonunt_dot_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/dimen_42_dip"
+        android:layout_marginTop="@dimen/dimen_4_dip"
+        android:layout_toLeftOf="@+id/v_center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/rc_unread_message_tip_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/rc_unread_tip_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/common_text_size10"
+            tools:text="10" />
+    </FrameLayout>
+</RelativeLayout>

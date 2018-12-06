@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#2f96ff</color>
+    <color name="textColorBackPrimary">#333333</color>
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="textColorThird">#c3d7f1</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="guide_pages">#88000000</color>
+
+    <color name="mine_bg">#5096a5ae</color>
+
+    <color name="white2">#f6f6f6</color>
+    <color name="white3">#f3f3f3</color>
+    <color name="text666">#666</color>
+    <color name="text999">#999</color>
+    <color name="text333">#333</color>
+    <color name="text555">#555555</color>
+    <color name="text_shadow">#FF878181</color>
+
+    <color name="gray">#ccc</color>
+    <color name="gray1">#ccc</color>
+    <color name="gray2">#aaaaaa</color>
+    <color name="gray3">#dcdcdc</color>
+    <color name="gray4">#f0eff5</color>
+    <color name="blue1">#25a7e2</color>
+    <color name="red">#F5003D</color>
+    <color name="red2">#ff3c47</color>
+    <color name="red3">#ff4b5c</color>
+    <color name="red4">#ff224c</color>
+    <color name="red5">#ff4141</color>
+    <color name="red6">#e6444d</color>
+    <color name="red7">#ffa4a9</color>
+    <color name="red8">#ff4362</color>
+    <color name="red9">#ff4341</color>
+
+
+    <color name="gold1">#fee6c3</color>
+    <color name="gold2">#f5debc</color>
+    <color name="gold3">#f8dcb3</color>
+    <color name="gold4">#cc8a28</color>
+    <color name="gold5">#fef4ec</color>
+    <color name="gold6">#e3b26a</color>
+    <color name="gold7">#ffefd9</color>
+    <color name="gold8">#ffb307</color>
+    <color name="gold9">#ff8c0a</color>
+
+    <color name="gold">#ffa913</color>
+
+    <color name="orange">#ffbf04</color>
+    <color name="orange1">#fff4d1</color>
+    <color name="orange2">#ffe9a8</color>
+    <color name="orange3">#f6b671</color>
+
+
+    <color name="common_diver_color">#DCDCDC</color>
+    <color name="list_divider_color">#DCDCDC</color>
+    <color name="list_divider_first_color">#DCDCDC</color>
+    <color name="list_divider_last_color">#cccccc</color>
+
+
+    <color name="makemoney_title_one">#ffffff</color>
+    <color name="makemoney_title_two">#666666</color>
+    <color name="makemoney_line">#aaaaaa</color>
+
+    <color name="makemoney_bank_earn">#9ccffd</color>
+    <color name="makemoney_shop_earn">#ffa6a5</color>
+    <color name="makemoney_loan_earn">#ffedb8</color>
+    <color name="makemoney_rechange_earn">#baf4e3</color>
+
+    <color name="malibu">#75D3FD</color>
+    <color name="makemoney_bg">#d3d0d5</color>
+    <color name="makemoney_shu_line">#11aacf</color>
+    <color name="light_blue">#72d3ff</color>
+    <color name="deep_light_blue">#57c5f7</color>
+    <color name="makemoney_earningdetail_title">#999999</color>
+    <color name="makemoney_earningdetail_bg">#f9f9f9</color>
+    <color name="makemoney_earningdetail_explain_tv">#8b4e8b</color>
+    <color name="makemoney_earningdetail_explain_bg">#f7e8f7</color>
+    <color name="makemoney_earningdetail">#333333</color>
+
+    <color name="translucent_white">#33FFFFFF</color>
+    <color name="mian_bg">#eeeeee</color>
+    <color name="text_gray">#aaaaaa</color>
+    <color name="tip_text_color">#2f96ff</color>
+    <color name="bg_round_button">#3698FC</color>
+    <color name="login_line_bg">#ececec</color>
+
+    <color name="light_grey">#EDEEEF</color>
+    <color name="dialog_red_btn_normal">#e82b38</color>
+    <color name="dialog_red_btn_pressed">#ae1520</color>
+    <color name="dialog_red_rain_btn_normal">#ffb304</color>
+    <color name="dialog_red_rain_btn_pressed">#ffb366</color>
+    <color name="dialog_text">#7e3b1c</color>
+    <color name="freshman_receive_redpacket_pressed_btn">#1867b7</color>
+    <color name="freshman_receive_redpacket_normal_btn">#2f96ff</color>
+    <color name="bankbusiness_myranking_number_title">#ff457e</color>
+    <color name="bankbusiness_myranking_title">#701d8d</color>
+    <color name="bankbusiness_myranking_opencard_title">#9c64b0</color>
+    <color name="photo_album_text_color">#007aff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="screen_full_transparent">#1A000000</color>
+    <color name="orange_invite">#f48c11</color>
+    <color name="invite_text">#ffea00</color>
+    <color name="invite_text_invite">#e57c00</color>
+    <color name="invite_item_text">#888888</color>
+    <color name="red_trans">#88fe5c5c</color>
+    <color name="side_bar_text">#4A4A4A</color>
+    <color name="shadow_bg">#66000000</color>
+    <color name="edit_bg">#EFEFF4</color>
+    <color name="darker_gray">#9b9b9b</color>
+    <color name="common_password">#cccccc</color>
+    <color name="item_down">#e3e3e3</color>
+    <color name="click_blue">#2285ea</color>
+
+    <color name="redpacket_jump_account">#507ba8</color>
+    <color name="redpacket_line">#f5debc</color>
+    <color name="report_button">#bbbbbb</color>
+
+    <color name="picsel_toolbar">#393A3E</color>
+    <color name="picsel_toolbar_transparent">#F0393A3E</color>
+    <color name="picsel_toolbar_send_disable">#3E7D2C</color>
+    <color name="picsel_toolbar_send_text_disable">#AAAAAA</color>
+    <color name="picsel_toolbar_send_normal">#45C018</color>
+    <color name="picsel_toolbar_send_text_normal">#FFFFFF</color>
+    <color name="picsel_grid_mask_pressed">#80000000</color>
+    <color name="picsel_catalog_shadow">#C0000000</color>
+    <color name="picsel_toolbar_send_pressed">#3E7D2C</color>
+    <color name="picsel_grid_mask">#00000000</color>
+
+    <color name="unselected">#eeeeee</color>
+    <color name="unselected_bule2">#4D00CAFD</color>
+    <!-- PicturePreviewActivity -->
+    <color name="picprev_toolbar_transparent">@color/picsel_toolbar_transparent</color>
+    <color name="extension_normal">#f4f4f6</color>
+    <color name="mine_local_color">#c2e7ff</color>
+
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="text_color">#575757</color>
+    <color name="progresswheel_color">#5592FB</color>
+    <color name="progresswheel_text_color">#ffffffff</color>
+    <!--     日历        -->
+    <color name="custom_header_text">#85B100</color>
+    <color name="custom_selected">#A8D324</color>
+    <color name="custom_background">#F0F8DB</color>
+    <color name="custom_background_today">#FF9105</color>
+    <color name="custom_background_disabled">#F0F8DB</color>
+    <color name="custom_text_selected">#FFFFFFFF</color>
+    <color name="custom_text_inactive">#7f778088</color>
+    <color name="cash_background">#ff9829</color>
+    <color name="detail_income_text">#fadebf</color>
+
+    <color name="accountant_hint_money">#c7c7c7</color>
+    <!-- QRCode scanner color begin -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="laser_color">#108ee9</color>
+    <color name="corner_color">#108ee9</color>
+    <color name="labeltext_color">#c7c7c7</color>
+    <!-- QRCode scanner color end -->
+    <color name="scanTextColorBack">#c0333333</color>
+    <color name="scanTextColorPriceBack">#f02f96ff</color>
+    <color name="btn_scan_press">#992f96ff</color>
+    <color name="title_scan_bg">#ff000000</color>
+
+    <!-- loan -->
+    <color name="loan_bg_blue">#2db7ff</color>
+    <color name="loan_bg_blue1">#02a1ff</color>
+    <color name="loan_text_bg_blue">#47bcff</color>
+    <color name="loan_white_80">#c8ffffff</color>
+    <color name="loan_vertical_gap">#97d7ff</color>
+    <color name="white_70">#B2ffffff</color>
+    <color name="loan_yellow">#ff9e02</color>
+    <color name="split_bg">#e3e3e3</color>
+
+    <color name="edit_hint_color">#aaaaaa</color>
+
+    <color name="text_click_bg">#bbbbbb</color>
+
+    <color name="quit_groupchat">#F20707</color>
+    <color name="orgin_notice_bg">#f5f9fe</color>
+
+
+    <color name="finance_home_tv_c">#fff600</color>
+
+    <color name="my_account_btn">#2f96ff</color>
+    <color name="my_account_disabled_btn">#992f96ff</color>
+
+    <color name="fin_home_granc">#cb625f</color>
+
+    <color name="scan_price_color">#ff9829</color>
+    <color name="scan_shop_color">#adadad</color>
+    <color name="finance_income_color">#e2f3ff</color>
+    <color name="password_keyboard_bg">#11ffffff</color>
+
+    <!-- applyloan gradual-->
+    <color name="gradual_start_color">#2f96ff</color>
+    <color name="gradual_end_color">#2db7ff</color>
+    <color name="loan_product_home_blue">#2d68ff</color>
+    <color name="loan_product_home_purple">#8333f3</color>
+
+    <color name="video_refresh_layout_color">#d5e9f7</color>
+    <color name="bg_save_btn">#50000000</color>
+    <color name="bg_time_length_text">#57000000</color>
+    <color name="orange5">#FAA565</color>
+    <color name="blue2">#00CAFD</color>
+
+    <color name="gold_coins_text_color">#FF4141</color>
+    <color name="goid_ccoins_sign_button">#f9b21b</color>
+    <color name="black_70">#B2000000</color>
+    <color name="black_30">#4c000000</color>
+    <color name="share_button_text_color">#df3121</color>
+
+    <!--游戏列表item背景色-->
+    <color name="game_purple">#7945fc</color>
+    <color name="game_red">#fe4b5c</color>
+    <color name="game_blue">#1ad0f0</color>
+    <color name="game_blue_dack">#2485cf</color>
+    <color name="game_green">#07d6b5</color>
+    <color name="game_yellow">#f7ca43</color>
+    <color name="game_more">#2e96ff</color>
+
+    <!--游戏列表按钮背景色-->
+    <color name="game_purple_btn">#5030e9</color>
+    <color name="game_red_btn">#ff0e45</color>
+    <color name="game_blue_btn">#06bfee</color>
+    <color name="game_blue_dack_btn">#005ec2</color>
+    <color name="game_green_btn">#00c7a6</color>
+    <color name="game_yellow_btn">#e0be5e</color>
+
+    <color name="coins_color">#fff54f</color>
+    <color name="color_buymessage_tv">#d5d4d4</color>
+
+    <!--首页乡邻账单button color-->
+    <color name="bills_button_color">#ff455f</color>
+    <color name="turntab_text_color">#7a3700</color>
+
+    <color name="home_transparent_frame">#90000000</color>
+
+    <color name="set_password_dialog_line">#c3c3c3</color>
+    <color name="extension_normal_home">#f4f4f4</color>
+
+    <color name="color_gold_heard_bg">#AD988E</color>
+    <color name="color_gold_context_bg">#764D39</color>
+
+    <color name="translucent_adbtnbg">#44000000</color>
+    <color name="transparent_white">#00ffffff</color>
+
+    <color name="daren_list_text_color">#44c685</color>
+    <color name="my_vault_text_color">#ffca28</color>
+</resources>

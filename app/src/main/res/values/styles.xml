@@ -1,0 +1,902 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppThemeTranslucent" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AppSplash" parent="android:Theme">
+        <!--<item name="android:windowBackground">@drawable/splash_bg</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="makemoney_title_one">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_text_size18</item>
+        <item name="android:textColor">@color/makemoney_title_one</item>
+    </style>
+
+    <style name="makemoney_title_three">
+        <item name="android:padding">@dimen/dimen_10_dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:textColor">@color/makemoney_title_two</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_7_dip</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="makemoney_bussiness_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_19_dip</item>
+    </style>
+
+
+    <!--登录页面编辑框样式-->
+    <style name="edit_style">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_57_dip</item>
+        <item name="android:paddingLeft">@dimen/dimen_20_dip</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:drawablePadding">@dimen/dimen_17_dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <style name="common_line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/common_diver_color</item>
+    </style>
+
+
+    <!--主页选项卡样式-->
+    <style name="main_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_tab_text_color</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">@dimen/dimen_6_dip</item>
+    </style>
+
+    <!--我的收藏选项卡样式-->
+    <style name="mine_collection_style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_video_tab_text_color</item>
+        <item name="android:textSize">@dimen/common_text_size17</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingLeft">@dimen/dimen_10_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_10_dip</item>
+    </style>
+
+
+    <style name="earningdetail_title_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_40_dip</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+    </style>
+
+    <style name="earningdetail_earning_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+    </style>
+
+    <style name="mine_item_icon_style">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16_dip</item>
+    </style>
+
+    <style name="mine_item_text1_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_13_dip</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5_dip</item>
+        <item name="android:textColor">@color/text333</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="mine_item_text2_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+    </style>
+
+    <style name="mine_item_icon2_style">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_7_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16_dip</item>
+        <item name="android:src">@mipmap/right_arrow</item>
+    </style>
+
+    <style name="mine_item_icon_tv_style">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_7_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16_dip</item>
+        <item name="android:drawableRight">@mipmap/right_arrow</item>
+        <item name="android:drawablePadding">@dimen/dimen_5_dip</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+    </style>
+
+    <!-- dialog -->
+    <style name="common_alert_dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="bankbuiness_top_title_tv">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/makemoney_title_two</item>
+        <item name="android:textSize">@dimen/common_text_size10</item>
+        <item name="android:layout_marginTop">13dp</item>
+    </style>
+
+    <style name="manager_info_title_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_13_dip</item>
+        <item name="android:textColor">@color/text333</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="manager_info_text_style">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_13_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_3_dip</item>
+        <item name="android:textColor">@color/text333</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <!-- 二维码dialog -->
+    <style name="qrcode_Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+
+    <style name="text_black_16">
+        <item name="android:textColor">@color/textColorBackPrimary</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+    </style>
+
+    <!-- 右上角popupwindow -->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!--关注和粉丝列表-->
+    <style name="ConcernItemNickName">
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ConcernItemDesc">
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxEms">14</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ConcernFollow">
+        <item name="android:textColor">@color/invite_item_text</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5_dip</item>
+    </style>
+
+    <style name="LimitEditText_find_friend">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <!--<item name="android:background">@drawable/find_friend_input</item>-->
+        <!--<item name="android:drawableLeft">@drawable/find_friend_search</item>-->
+        <item name="android:drawablePadding">@dimen/dimen_5_dip</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/dimen_10_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_10_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_30_dip</item>
+        <item name="android:paddingTop">@dimen/dimen_10_dip</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    <!-- 自定义progressbar -->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+
+    <!-- loan资料认证 -->
+    <style name="data_certification_item_text3_style">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16_dip</item>
+        <item name="android:drawableRight">@mipmap/right_arrow</item>
+        <item name="android:textColor">@color/red5</item>
+    </style>
+
+    <style name="data_certification_item_text1_style">
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <item name="android:layout_marginTop">@dimen/dimen_13_dip</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+    </style>
+
+    <style name="data_certification_item_text2_style">
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginTop">@dimen/dimen_3_dip</item>
+    </style>
+
+    <!-- 真实信息填写 text-->
+    <style name="real_message_text_title">
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:paddingLeft">@dimen/dimen_16_dip</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <item name="android:background">@color/unselected</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="real_message_text_left">
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16_dip</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--alert style-->
+    <style name="real_message_text_alert">
+        <item name="android:textColor">@color/bg_round_button</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16_dip</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="real_message_text_right">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">@dimen/dimen_12_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16_dip</item>
+        <item name="android:drawableRight">@mipmap/right_arrow</item>
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="real_message_text_right_unit">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawablePadding">@dimen/dimen_12_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16_dip</item>
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="real_message_line">
+        <item name="android:background">@color/item_down</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16_dip</item>
+    </style>
+
+    <style name="loan_check_name_dialog">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_3_dip</item>
+    </style>
+    <!-- loan button-->
+    <style name="loan_button_blue">
+        <!--<item name="android:background">@drawable/selector_loan_button</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_16_dip</item>
+    </style>
+
+
+    <!-- 身份证信息text-->
+    <style name="id_card_text_left">
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+    </style>
+
+    <style name="id_card_text_right">
+        <item name="android:textColor">@color/makemoney_title_two</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="item_user_recommend_text_name">
+        <item name="android:textColor">@color/textColorBackPrimary</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+    </style>
+
+    <style name="item_user_recommend_text">
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+    </style>
+
+    <style name="item_user_loan_text">
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="text_doubt_service_phone">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:layout_marginTop">@dimen/dimen_13_dip</item>
+    </style>
+
+
+    <style name="text_loan_form">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ll_upload_photo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_f1_px</item>
+        <!--<item name="android:background">@drawable/bg_white_border_right_angle</item>-->
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/dimen_15_dip</item>
+    </style>
+
+    <style name="text_upload_photo_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="add_photo_style">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_57_dip</item>
+        <item name="android:paddingLeft">@dimen/dimen_20_dip</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:drawablePadding">@dimen/dimen_17_dip</item>
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/dimen_10_dip</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="edit_loan_form">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_57_dip</item>
+        <item name="android:paddingLeft">@dimen/dimen_20_dip</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:drawablePadding">@dimen/dimen_17_dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/dimen_10_dip</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+
+    <style name="text_loan_form_data">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_15_dip</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="text_loan_form_data_ll">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_15_dip</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 我的借款 -->
+    <style name="borrow_item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <style name="order_item_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 我的借款 订单详情-->
+    <style name="borrow_order_detail_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+    <!-- 支付记录 -->
+    <style name="loan_pay_record_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:textColor">@color/gray2</item>
+    </style>
+    <style name="borrow_order_detail_btn_style">
+        <item name="android:layout_width">@dimen/dimen_0_dip</item>
+        <item name="android:layout_height">@dimen/def_height</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+        <item name="android:layout_weight">1</item>
+        <!--<item name="android:background">@drawable/selector_loan_button</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_7_dip</item>
+        <item name="android:layout_marginRight">@dimen/dimen_7_dip</item>
+    </style>
+
+    <style name="borrow_order_detail_prepayment_dialog_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="loan_station_invitation_code_dialog_btn">
+        <item name="android:layout_width">@dimen/dimen_0_dip</item>
+        <item name="android:layout_height">@dimen/def_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!-- 还款计划-->
+    <style name="repayment_plan_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="repayment_plan_text_1">
+        <item name="android:layout_width">@dimen/dimen_0_dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="repayment_plan_item_text">
+        <item name="android:layout_width">@dimen/dimen_0_dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray2</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 客服电话 -->
+    <style name="text_service_phone_loan">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/def_height</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/blue1</item>
+        <!--<item name="android:text">@string/call_service_phone</item>-->
+    </style>
+
+
+    <!--faceid image icon text style-->
+    <style name="loan_faceid_text_style">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <!--<item name="android:drawableTop">@drawable/photograph</item>-->
+        <item name="android:drawablePadding">@dimen/dimen_15_dip</item>
+    </style>
+
+    <style name="loan_faceid_video_title_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="loan_faceid_video_time_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <!--<item name="android:background">@drawable/video_time_length_shape</item>-->
+        <item name="android:paddingLeft">@dimen/dimen_10_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_10_dip</item>
+        <item name="android:paddingTop">@dimen/dimen_3_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_3_dip</item>
+    </style>
+
+
+    <style name="faceid_card_text_left_style">
+        <item name="android:textColor">@color/makemoney_earningdetail</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_16_dip</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--身份认证状态-->
+    <style name="loan_realname_state_text_style">
+        <item name="android:textColor">@color/makemoney_title_two</item>
+        <item name="android:textSize">@dimen/common_text_size20</item>
+        <item name="android:drawablePadding">@dimen/dimen_36_dip</item>
+    </style>
+    <!--身份认证结果提示-->
+    <style name="loan_realname_notice_text_style">
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:layout_marginTop">@dimen/dimen_13_dip</item>
+    </style>
+
+    <!--数字键盘-->
+    <style name="PasswordInputDialog" parent="android:style/Theme.Dialog">
+        <!--背景色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否去除标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--设置全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模态-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--点击外区域dialog消失-->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <!--Dialog进出动画-->
+        <item name="android:windowAnimationStyle">@style/KeyboardDialogAnimation</item>
+    </style>
+    <!--dialog进出动画-->
+    <style name="KeyboardDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_keyboard_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_keyboard_out</item>
+    </style>
+
+    <!-- 贷款业务开通成功 -->
+    <style name="loan_business_success_head_can_borrow">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size24</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loan_business_success_head_rental">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loan_business_success_card_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size11</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loan_business_success_item_title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size18</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loan_business_success_item_area">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loan_business_success_item_rate">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loan_user_confidence_lever_item_btn">
+        <item name="android:textColor">@color/text333</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <item name="android:layout_width">@dimen/dimen_65_dip</item>
+        <item name="android:layout_height">@dimen/dimen_35_dip</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:background">@drawable/bg_user_confidence_lv_item_btn</item>-->
+    </style>
+    <style name="loan_picture_select_notice_style">
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_20_dip</item>
+    </style>
+
+    <style name="apply_for_loan_agreement">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:textSize">@dimen/common_text_size10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dimen_30_dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="loan_refund_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--我的-->
+    <style name="mine_bottom_content_num_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+    </style>
+
+    <style name="mine_bottom_content_title_style" parent="mine_bottom_content_num_style">
+        <item name="android:textColor">@color/white_70</item>
+    </style>
+
+    <style name="love_tread_style">
+        <item name="android:drawablePadding">@dimen/dimen_5_dip</item>
+        <item name="android:paddingTop">@dimen/dimen_10_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_10_dip</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <!--<item name="android:background">@drawable/love_tread_shape</item>-->
+        <item name="android:text">0</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="sharing_platform">
+        <item name="android:textSize">@dimen/dimen_13_dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_15_dip</item>
+        <item name="android:textColor">@color/makemoney_earningdetail_title</item>
+        <item name="android:drawablePadding">@dimen/dimen_5_dip</item>
+    </style>
+
+    <style name="tabLayoutTextStyle">
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <!--发布招聘-->
+    <style name="publish_recruitment_style">
+        <item name="android:textSize">@dimen/common_text_size15</item>
+        <item name="android:textColor">@color/textColorBackPrimary</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_15_dip</item>
+    </style>
+
+    <style name="publish_recruitment_value_style" parent="publish_recruitment_style">
+        <item name="android:textColor">@color/makemoney_title_two</item>
+        <item name="android:layout_marginRight">@dimen/dimen_15_dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center|right</item>
+    </style>
+
+    <!--activity背景透明-->
+    <style name="activityTranslucentTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--发布界面新增文本样式-->
+    <style name="publish_TextView">
+        <item name="android:paddingLeft">@dimen/dimen_7_dip</item>
+        <item name="android:textColor">@color/text666</item>
+        <item name="android:textSize">@dimen/common_text_size12</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+
+    <!--纯透明activity-->
+    <style name="TranslucentTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--发现-->
+    <style name="find_textview_style">
+        <item name="android:textColor">@color/text333</item>
+        <item name="android:textSize">@dimen/common_text_size13</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/dimen_8_dip</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--无标题栏透明-->
+    <style name="TranslucentRNTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--广告页style-->
+    <style name="AD" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="LimitEditText_search">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <!--<item name="android:background">@drawable/search_bg</item>-->
+        <!--<item name="android:drawableLeft">@drawable/find_friend_search</item>-->
+        <item name="android:drawablePadding">@dimen/dimen_5_dip</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:maxLength">18</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/dimen_10_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_10_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_30_dip</item>
+        <item name="android:paddingTop">@dimen/dimen_10_dip</item>
+        <item name="android:textSize">@dimen/common_text_size15</item>
+    </style>
+
+    <style name="PictureStyle" parent="Theme.AppCompat.CompactMenu">
+        <item name="android:windowAnimationStyle">@style/activityAnim</item>
+    </style>
+
+    <style name="activityAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/create_zoomin</item>
+        <item name="android:activityOpenExitAnimation">@anim/create_zoomout</item>
+    </style>
+
+    <!--微博筛选项style-->
+    <style name="micro_blog_filter_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <item name="android:paddingLeft">@dimen/dimen_12_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_12_dip</item>
+        <item name="android:paddingTop">@dimen/dimen_5_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_5_dip</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+        <!--<item name="android:textColor">@drawable/bg_micro_blog_filter_item_text</item>-->
+        <!--<item name="android:background">@drawable/bg_micro_blog_filter_item</item>-->
+    </style>
+
+    <!--步步生金-我的金库-->
+    <style name="my_vault_style">
+        <item name="android:textColor">@color/textColorBackPrimary</item>
+        <item name="android:textSize">@dimen/common_text_size16</item>
+    </style>
+
+    <style name="my_valut_dialog_style">
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="LimitEditText_search_map">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_10_dip</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+        <item name="android:background">@drawable/search_map_bg</item>
+        <!--<item name="android:drawableLeft">@drawable/find_friend_search</item>-->
+        <item name="android:drawablePadding">@dimen/dimen_5_dip</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:maxLength">18</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/dimen_10_dip</item>
+        <item name="android:paddingBottom">@dimen/dimen_10_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_30_dip</item>
+        <item name="android:paddingTop">@dimen/dimen_10_dip</item>
+        <item name="android:textSize">@dimen/common_text_size14</item>
+    </style>
+</resources>
