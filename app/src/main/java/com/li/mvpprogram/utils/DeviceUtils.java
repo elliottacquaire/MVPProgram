@@ -15,14 +15,15 @@ import android.os.Environment;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.telephony.TelephonyManager;
+import android.view.ViewConfiguration;
 
 import java.io.File;
 import java.io.IOException;
 
 /**
  * 设备相关操作
- * Created by lison on 8/8/16.
  */
+
 public class DeviceUtils {
 
     private DeviceUtils() {
@@ -189,5 +190,16 @@ public class DeviceUtils {
             return false;
         }*/
     }
+
+    /**
+     * 获取判断滑动的最小滑动距离
+     * @param context
+     * @return
+     */
+    public static int getMinTouchSlop(Context context){
+        return ViewConfiguration.get(context).getScaledTouchSlop();
+    }
+
+
 
 }
